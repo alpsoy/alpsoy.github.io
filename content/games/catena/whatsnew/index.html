@@ -11,10 +11,10 @@
 </head>
 
 <style>
-	body{text-align: left; font-family: "Courier"; font-size: 16px; padding: 0px; margin: 0px}
+	body{text-align: center; font-family: "Courier"; font-size: 16px; padding: 0px; margin: 0px}
 	
 	header{width: 100%; height: 64px; background-color: #DF3738; padding: 0px; margin: 0px; text-align: center}
-	#content{margin: 0px 20px}
+	#content p, #content h3, #content h4{margin: 0px 20px}
 	
 	h3, h4{text-align: center}
 	
@@ -22,36 +22,68 @@
 	
 	ul{padding: 0px; margin: 0px}
 	li{list-style: none; line-height: 24px}
+	
+	.headlines{text-align: center; font-weight: 400; font-size: 20px; border-bottom: solid 1px #DF3738; padding: 16px 0px; margin: 0px 20px 20px 20px}
+	.headlines a{color: #DF3738; text-decoration: none}
+	
+	#content img{margin: 20px 0px}
+	
 </style>
+
+<script type="text/javascript">
+	
+	function scrollTo(place)
+	{
+		
+		$('html, body').animate({
+			scrollTop: $('#'+place).offset().top + $(this).height()
+			}, 1000);
+		
+	}
+
+</script>
 
 <body>
 	<header><img src="images/header_logo.png" width="72" height="64"/></header>
 	<div id="content">
 	
-		<h3 style="border-bottom: solid 1px #DF3738; padding: 16px 0px; margin: 0px 0px 20px 0px; font-size: 16px">WHAT'S NEW IN THIS VERSION</h3>
+		<h3 style="border-bottom: solid 1px #DF3738; padding: 16px 0px; margin: 0px 20px 0px 20px; font-size: 16px">WHAT'S NEW IN THIS VERSION</h3>
 		
-		<h4>NEW GAMEPLAY</h4>
-		<p>We are really excited to give you the new gameplay of Catena. Thanks to your feedbacks, suggestions and curiosity about the game, we have finally brought Catena’s gameplay closer to a perfection.</p>
-		<p>The concept and basic gameplay is the same. You still need to come up with a new word with the ending letters of your opponent’s last word.</p>
-		<p>We have changed how you win or lose the game and we will be showing you the score you get with your game play.</p>
-		<img src=""/>
-		<p>To win the game you need to fill the bar with your colour. Each letter you use from your opponent’s word gives you a bar point.</p>
-		<img src=""/>
+		<ul class="headlines">
+			<a href="#" onclick="scrollTo('messaging');"><li>~ MESSAGING ~</li></a>
+			<a href="#" onclick="scrollTo('gameplay');"><li>~ NEW GAMEPLAY ~</li></a>
+			<a href="#" onclick="scrollTo('leaderboards');"><li>~ SCORES & LEADERBOARDS ~</li></a>
+		</ul>
 		
-		<h4>SCORES & LEADERBOARDS</h4>
-		<p>Now you also have a game score that will be carried to a leaderboard. Catena now has two leaderboards for both Single Player & Multi Player game, after finishing a game, your score will be added to your current leaderboard score.</p>
-		<img src=""/>
-		<p>To get higher game scores, first use as many letters as you can use from your opponent’s word, then make the word as long as you can.</p>
-		<img src=""/>
+		<div id="gameplay">
+			<h4>NEW GAMEPLAY</h4>
+			<p>We are really excited to give you the new gameplay of Catena. Thanks to your feedbacks, suggestions and curiosity about the game, we have finally brought Catena’s gameplay closer to a perfection.</p>
+			<p>The concept and basic gameplay is the same. You still need to come up with a new word with the ending letters of your opponent’s last word.</p>
+			<p>We have changed how you win or lose the game and we will be showing you the score you get with your game play.</p>
+			<img src="images/balanceBar.png" width="320" height="200"/>
+			<p>To win the game you need to fill the bar with your colour. Each letter you use from your opponent’s word gives you a bar point.</p>
+			<img src=""/>
+		</div>
 		
-		<h4>MESSAGING</h4>
-		<img src=""/>
-		<p>Yes, now you can attach a tiny message to your word to send your opponent. We pretty are sure you will behave.</p>
+		<div id="leaderboards">
+			<h4>SCORES & LEADERBOARDS</h4>
+			<p>Now you also have a game score that will be carried to a leaderboard. Catena now has two leaderboards for both Single Player & Multi Player game, after finishing a game, your score will be added to your current leaderboard score.</p>
+			<img src=""/>
+			<p>To get higher game scores, first use as many letters as you can use from your opponent’s word, then make the word as long as you can.</p>
+			<img src=""/>
+		</div>
 		
-		<h4>NEW MATCH RESULT SCREEN</h4>
-		<img src=""/>
-		<p>We also redesigned the match result screen to give you detailed information about your score and how you got it.</p>
+		<div id="messaging">
+			<h4>MESSAGING</h4>
+			<img src=""/>
+			<p>Yes, now you can attach a tiny message to your word to send your opponent. We pretty are sure you will behave.</p>
+			
+			<h4>NEW MATCH RESULT SCREEN</h4>
+			<img src=""/>
+			<p>We also redesigned the match result screen to give you detailed information about your score and how you got it.</p>
+		</div>
 		
 	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </body>
 </html>
