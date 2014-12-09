@@ -32,62 +32,19 @@
 	
 </style>
 
-<script type="text/javascript">
-	
-	function scrollTo(place)
-	{
-		
-		$('html, body').animate({
-			scrollTop: $('#'+place).offset().top
-			}, 400);
-		
-	}
-
-</script>
 
 <body>
 	<header><img src="images/header_logo.png" width="72" height="64"/></header>
 	<div id="content">
 	
 		<h3 style="border-bottom: solid 1px #DF3738; padding: 16px 0px; margin: 0px 20px 0px 20px">WHAT'S NEW IN THIS VERSION</h3>
-		
-		<ul class="headlines">
-			<a href="#" onclick="scrollTo('messaging');"><li>~ MESSAGING ~</li></a>
-			<a href="#" onclick="scrollTo('gameplay');"><li>~ NEW GAMEPLAY ~</li></a>
-			<a href="#" onclick="scrollTo('leaderboards');"><li>~ SCORES & LEADERBOARDS ~</li></a>
-			<a href="#" onclick="scrollTo('matchResult');"><li>~ NEW MATCH RESULT VIEW ~</li></a>
-		</ul>
-		<div id="messaging" class="section">
-			<h4>MESSAGING</h4>
-			<img src="images/messaging.png" width="320"/>
-			<p>Yes, now you can attach a tiny message to your word to send your opponent. We are pretty sure you will behave.</p>
-		</div>
-		<div id="gameplay" class="section">
-			<h4>NEW GAMEPLAY</h4>
-			<p>We are really excited to give you the new gameplay of Catena. Thanks to your feedbacks, suggestions and curiosity about the game, we have finally brought Catena’s gameplay closer to a perfection.</p>※
-			<p>The concept and basic gameplay is the same. You still need to come up with a new word with the ending letters of your opponent’s last word.</p>※
-			<p>We have changed how you win or lose the game and we will be showing you the score you get with your game play.</p>
-			<img src="images/balanceBar.png" width="320" height="200"/>
-			<p>To win the game you need to fill the bar with your colour. Each letter you use from your opponent’s word gives you a bar point.</p>
-			<img src="images/balancePoints.png" width="320" height="80"/>
-		</div>
-		
-		<div id="leaderboards" class="section">
-			<h4>SCORES & LEADERBOARDS</h4>
-			<p>Now you also have a game score that will be carried to a leaderboard. Catena now has two leaderboards for both Single Player & Multi Player games, after finishing a game. Your score will be added to your current leaderboard score when you finish a game.</p>
-			<img src="images/scoreBoard.png" width="320"/>
-			<p>To get higher game scores, first use as many letters as you can use from your opponent’s word, then make the word as long as you can.</p>
-		</div>
-		<div id="matchResult" class="section">
-			<h4>NEW MATCH RESULT SCREEN</h4>
-			<img src="images/scoreDetails.png" width="320"/>
-			<p>We also redesigned the match result screen to give you detailed information about your score and how you got it.</p>
-		</div>
-		
-		<h2 style="color: #DF3738">iPhone 4 & 4S USERS, TO EXIT THIS SCREEN, PLEASE QUIT THE APP FROM MULTITASKING AND RELAUNCH.</h2>
-		<p>This is a temporary fix, we will fix it permanently with the next update.</p>
-		
+
+		<p style="padding: 20px 0px">Fixed an issue for some users having crashes while Single Player game ends.</p>
+		<p style="padding: 20px 0px">Players had this issue, please try ending those matches again, it should work.</p>
+		<h4 style="border-top: solid 1px #DF3738;">IMPORTANT NOTE</h4>
+		<p style="padding: 20px 0px">Please make sure you are connected to Game Center even though you are playing Single Player matches.</p>
+				
 	</div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </body>
 </html>
