@@ -1,0 +1,352 @@
+body
+{
+	color:#212121;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Helvetica';
+}
+
+body.yellow{background-color: #f2af00}
+body.blue{background-color: #00739a}
+body.green{background-color: #80cd01}
+body.purple{background-color: #541683}
+
+.container
+{
+  max-width: 1680px;
+  margin: 120px auto;
+  min-height: 900px;
+  padding: 0px 120px;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.yellow .container{background-image: url('images/Bg-Yellow.png');}
+.blue .container{background-image: url('images/Bg-Blue.png');}
+.green .container{background-image: url('images/Bg-Green.png');}
+.purple .container{background-image: url('images/Bg-Purple.png');}
+
+.container .title
+{
+  width: 600px;
+  height: 670px;
+  margin-top: 120px;
+}
+
+.yellow .title, .green .title{background: url('images/title-black.svg') no-repeat;}
+.blue .title{background: url('images/title-white.svg') no-repeat;}
+.purple .title{background: url('images/title-Yellow.svg') no-repeat;}
+
+.container .links
+{
+  width: 580px;
+  padding: 20px 0px 0px 0px;
+  margin: 0px;
+  height: 80px;
+}
+
+.yellow .links, .green .links{border-top: solid 2px #212121}
+.blue .links{border-top: solid 2px #e4e4e4}
+.purple .links{border-top: solid 2px #141414}
+
+.container .links li
+{
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  background: url('images/links-sheet.png') no-repeat;
+  list-style: none;
+  float: left;
+  cursor: pointer;
+}
+
+.container .links li.last
+{
+  margin-right: 0px;
+}
+
+.yellow .links li.linkedin, .green .links li.linkedin{background-position: -80px 0px}
+.yellow .links li.spotify, .green .links li.spotify{background-position: -160px 0px}
+.yellow .links li.reddit, .green .links li.reddit{background-position: -240px 0px}
+.yellow .links li.github, .green .links li.github{background-position: -320px 0px}
+.yellow .links li.disclamer, .green .links li.disclamer{background-position: -400px 0px}
+
+.blue .links li.twitter{background-position: 0px -80px}
+.blue .links li.linkedin{background-position: -80px -80px}
+.blue .links li.spotify{background-position: -160px -80px}
+.blue .links li.reddit{background-position: -240px -80px}
+.blue .links li.github{background-position: -320px -80px}
+.blue .links li.disclamer{background-position: -400px -80px}
+
+.purple .links li.twitter{background-position: 0px -160px}
+.purple .links li.linkedin{background-position: -80px -160px}
+.purple .links li.spotify{background-position: -160px -160px}
+.purple .links li.reddit{background-position: -240px -160px}
+.purple .links li.github{background-position: -320px -160px}
+.purple .links li.disclamer{background-position: -400px -160px}
+
+@media screen and (max-width: 1440px)
+  {
+
+    .container
+    {
+      margin: 0px auto;
+      background-size: 480px 640px;
+    }
+
+    .container .title
+    {
+      background-size: 480px 400px;
+      margin-top: 80px;
+      height: 500px;
+    }
+
+    .container .links
+    {
+      width: 484px;
+      padding: 20px 0px 0px 0px;
+    }
+
+    .container .links li
+    {
+      width: 64px;
+      height: 64px;
+      background-size: 384px 192px;
+    }
+
+    .yellow .links li.linkedin, .green .links li.linkedin{background-position: -64px 0px}
+    .yellow .links li.spotify, .green .links li.spotify{background-position: -128px 0px}
+    .yellow .links li.reddit, .green .links li.reddit{background-position: -192px 0px}
+    .yellow .links li.github, .green .links li.github{background-position: -256px 0px}
+    .yellow .links li.disclamer, .green .links li.disclamer{background-position: -320px 0px}
+
+    .blue .links li.twitter{background-position: 0px -64px}
+    .blue .links li.linkedin{background-position: -64px -64px}
+    .blue .links li.spotify{background-position: -128px -64px}
+    .blue .links li.reddit{background-position: -192px -64px}
+    .blue .links li.github{background-position: -256px -64px}
+    .blue .links li.disclamer{background-position: -320px -64px}
+
+    .purple .links li.twitter{background-position: 0px -128px}
+    .purple .links li.linkedin{background-position: -64px -128px}
+    .purple .links li.spotify{background-position: -128px -128px}
+    .purple .links li.reddit{background-position: -192px -128px}
+    .purple .links li.github{background-position: -256px -128px}
+    .purple .links li.disclamer{background-position: -320px -128px}
+
+  }
+
+@media screen and (max-width: 1024px)
+  {
+
+    .container
+    {
+      margin: 0px auto;
+      background-size: 360px 480px;
+    }
+
+    .container .title
+    {
+      background-size: 360px 300px;
+      margin-top: 72px;
+      height: 400px;
+    }
+
+    .container .links
+    {
+      width: 368px;
+      padding: 16px 0px 0px 0px;
+    }
+
+    .container .links li
+    {
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+      background-size: 288px 144px;
+    }
+
+    .yellow .links li.linkedin, .green .links li.linkedin{background-position: -48px 0px}
+    .yellow .links li.spotify, .green .links li.spotify{background-position: -96px 0px}
+    .yellow .links li.reddit, .green .links li.reddit{background-position: -144px 0px}
+    .yellow .links li.github, .green .links li.github{background-position: -192px 0px}
+    .yellow .links li.disclamer, .green .links li.disclamer{background-position: -240px 0px}
+
+    .blue .links li.twitter{background-position: 0px -48px}
+    .blue .links li.linkedin{background-position: -48px -48px}
+    .blue .links li.spotify{background-position: -96px -48px}
+    .blue .links li.reddit{background-position: -144px -48px}
+    .blue .links li.github{background-position: -192px -48px}
+    .blue .links li.disclamer{background-position: -240px -48px}
+
+    .purple .links li.twitter{background-position: 0px -96px}
+    .purple .links li.linkedin{background-position: -48px -96px}
+    .purple .links li.spotify{background-position: -96px -96px}
+    .purple .links li.reddit{background-position: -144px -96px}
+    .purple .links li.github{background-position: -192px -96px}
+    .purple .links li.disclamer{background-position: -240px -96px}
+
+  }
+
+@media screen and (max-width: 768px)
+  {
+
+    .container
+    {
+      width: 100%;
+      max-width: auto;
+      margin: 0px auto;
+      padding: 0px;
+      background-position: top center;
+      background-size: 360px 480px;
+    }
+
+    .container .title
+    {
+      width: 480px;
+      background-size: 480px 400px;
+      margin: 400px auto 80px auto;
+      height: 400px;
+    }
+
+    .container .links
+    {
+      width: 484px;
+      padding: 20px 0px 0px 0px;
+      height: 80px;
+      margin: 0 auto;
+    }
+
+    .container .links li
+    {
+      width: 64px;
+      height: 64px;
+      margin-right: 20px;
+      background-size: 384px 192px;
+    }
+
+    .yellow .links li.linkedin, .green .links li.linkedin{background-position: -64px 0px}
+    .yellow .links li.spotify, .green .links li.spotify{background-position: -128px 0px}
+    .yellow .links li.reddit, .green .links li.reddit{background-position: -192px 0px}
+    .yellow .links li.github, .green .links li.github{background-position: -256px 0px}
+    .yellow .links li.disclamer, .green .links li.disclamer{background-position: -320px 0px}
+
+    .blue .links li.twitter{background-position: 0px -64px}
+    .blue .links li.linkedin{background-position: -64px -64px}
+    .blue .links li.spotify{background-position: -128px -64px}
+    .blue .links li.reddit{background-position: -192px -64px}
+    .blue .links li.github{background-position: -256px -64px}
+    .blue .links li.disclamer{background-position: -320px -64px}
+
+    .purple .links li.twitter{background-position: 0px -128px}
+    .purple .links li.linkedin{background-position: -64px -128px}
+    .purple .links li.spotify{background-position: -128px -128px}
+    .purple .links li.reddit{background-position: -192px -128px}
+    .purple .links li.github{background-position: -256px -128px}
+    .purple .links li.disclamer{background-position: -320px -128px}
+
+  }
+
+  @media screen and (max-width: 600px)
+    {
+
+      .container
+      {
+        background-size: 360px 480px;
+      }
+
+      .container .title
+      {
+        width: 360px;
+        background-size: 360px 300px;
+        height: 300px;
+      }
+
+      .container .links
+      {
+        width: 368px;
+        padding: 16px 0px 0px 0px;
+      }
+
+      .container .links li
+      {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+        background-size: 288px 144px;
+      }
+
+      .yellow .links li.linkedin, .green .links li.linkedin{background-position: -48px 0px}
+      .yellow .links li.spotify, .green .links li.spotify{background-position: -96px 0px}
+      .yellow .links li.reddit, .green .links li.reddit{background-position: -144px 0px}
+      .yellow .links li.github, .green .links li.github{background-position: -192px 0px}
+      .yellow .links li.disclamer, .green .links li.disclamer{background-position: -240px 0px}
+
+      .blue .links li.twitter{background-position: 0px -48px}
+      .blue .links li.linkedin{background-position: -48px -48px}
+      .blue .links li.spotify{background-position: -96px -48px}
+      .blue .links li.reddit{background-position: -144px -48px}
+      .blue .links li.github{background-position: -192px -48px}
+      .blue .links li.disclamer{background-position: -240px -48px}
+
+      .purple .links li.twitter{background-position: 0px -96px}
+      .purple .links li.linkedin{background-position: -48px -96px}
+      .purple .links li.spotify{background-position: -96px -96px}
+      .purple .links li.reddit{background-position: -144px -96px}
+      .purple .links li.github{background-position: -192px -96px}
+      .purple .links li.disclamer{background-position: -240px -96px}
+
+    }
+
+    @media screen and (max-width: 375px)
+      {
+
+        .container
+        {
+          background-size: 300px 400px;
+        }
+
+        .container .title
+        {
+          width: 300px;
+          background-size: 300px 250px;
+          height: 250px;
+          margin-top: 320px;
+          margin-bottom: 40px;
+        }
+
+        .container .links
+        {
+          width: 290px;
+          padding: 10px 0px 0px 0px;
+        }
+
+        .container .links li
+        {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+          background-size: 240px 120px;
+        }
+
+        .yellow .links li.linkedin, .green .links li.linkedin{background-position: -40px 0px}
+        .yellow .links li.spotify, .green .links li.spotify{background-position: -80px 0px}
+        .yellow .links li.reddit, .green .links li.reddit{background-position: -120px 0px}
+        .yellow .links li.github, .green .links li.github{background-position: -160px 0px}
+        .yellow .links li.disclamer, .green .links li.disclamer{background-position: -200px 0px}
+
+        .blue .links li.twitter{background-position: 0px -40px}
+        .blue .links li.linkedin{background-position: -40px -40px}
+        .blue .links li.spotify{background-position: -80px -40px}
+        .blue .links li.reddit{background-position: -120px -40px}
+        .blue .links li.github{background-position: -160px -40px}
+        .blue .links li.disclamer{background-position: -200px -40px}
+
+        .purple .links li.twitter{background-position: 0px -80px}
+        .purple .links li.linkedin{background-position: -40px -80px}
+        .purple .links li.spotify{background-position: -80px -80px}
+        .purple .links li.reddit{background-position: -120px -80px}
+        .purple .links li.github{background-position: -160px -80px}
+        .purple .links li.disclamer{background-position: -200px -80px}
+
+      }
