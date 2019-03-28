@@ -195,18 +195,17 @@ body.purple{background-color: #541683}
     .container
     {
       width: 100%;
-      max-width: auto;
-      margin: 0px auto;
       padding: 0px;
       background-position: top center;
       background-size: 360px 480px;
+			padding-top: 400px;
     }
 
     .container .title
     {
       width: 480px;
       background-size: 480px 400px;
-      margin: 400px auto 80px auto;
+      margin: 0px auto 80px auto;
       height: 400px;
     }
 
@@ -305,6 +304,7 @@ body.purple{background-color: #541683}
         .container
         {
           background-size: 300px 400px;
+					padding-top: 320px;
         }
 
         .container .title
@@ -312,7 +312,6 @@ body.purple{background-color: #541683}
           width: 300px;
           background-size: 300px 250px;
           height: 250px;
-          margin-top: 320px;
           margin-bottom: 40px;
         }
 
