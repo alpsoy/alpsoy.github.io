@@ -35,7 +35,7 @@ body.purple{background-color: #541683}
 
 .yellow .title, .green .title{background: url('images/title-black.svg') no-repeat;}
 .blue .title{background: url('images/title-white.svg') no-repeat;}
-.purple .title{background: url('images/title-Yellow.svg') no-repeat;}
+.purple .title{background: url('images/title-yellow.svg') no-repeat;}
 
 .container .links
 {
