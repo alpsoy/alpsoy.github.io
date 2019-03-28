@@ -4,6 +4,7 @@ body
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Helvetica';
+	background-color: #141414;
 }
 
 body.yellow{background-color: #f2af00}
